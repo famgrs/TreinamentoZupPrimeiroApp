@@ -8,8 +8,12 @@
 
 import Foundation
 
-struct Lending: Codable {
+struct Lending: Codable, Comparable {
     var name: String
     var object: String
     var date: Date
+    
+    static func < (lhs: Lending, rhs: Lending) -> Bool {
+        return lhs.date < rhs.date
+    }
 }
