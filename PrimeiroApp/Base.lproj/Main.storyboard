@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3NY-ML-nVE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 1-->
+        <scene sceneID="Rh9-xP-4oH">
+            <objects>
+                <viewController id="v25-8x-9ie" customClass="RegisterViewController" customModule="PrimeiroApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bj-L4-and">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgRegister" translatesAutoresizingMaskIntoConstraints="NO" id="KsO-Jb-Aez">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBf-dh-usB">
+                                <rect key="frame" x="16" y="45" width="343" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Yuv-HL-0jo">
+                                        <rect key="frame" x="8" y="8" width="327" height="284"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastrar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM2-P9-zJp">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.31764705879999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do amigo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IIS-Gf-rr0">
+                                                <rect key="frame" x="0.0" y="39.5" width="327" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Objeto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcX-SO-9iE">
+                                                <rect key="frame" x="0.0" y="75.5" width="327" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <datePicker opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" placeholderIntrinsicWidth="327" placeholderIntrinsicHeight="133.5" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-k4-PTg">
+                                                <rect key="frame" x="0.0" y="111.5" width="327" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="atS-LL-ctX"/>
+                                                </constraints>
+                                                <date key="date" timeIntervalSinceReferenceDate="578993499.96757805">
+                                                    <!--2019-05-08 07:31:39 +0000-->
+                                                </date>
+                                                <locale key="locale" localeIdentifier="pt_BR"/>
+                                            </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsH-8X-eO3">
+                                                <rect key="frame" x="0.0" y="242.5" width="327" height="41.5"/>
+                                                <color key="backgroundColor" red="0.2196078431372549" green="0.31764705882352939" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Salvar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="saveTapped:" destination="v25-8x-9ie" eventType="touchUpInside" id="aMV-9G-u7i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Yuv-HL-0jo" firstAttribute="leading" secondItem="MBf-dh-usB" secondAttribute="leading" constant="8" id="2Zs-Lc-rKP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yuv-HL-0jo" secondAttribute="trailing" constant="8" id="4yD-Dk-Ceh"/>
+                                    <constraint firstAttribute="height" constant="300" id="UYl-bL-vtJ"/>
+                                    <constraint firstItem="Yuv-HL-0jo" firstAttribute="top" secondItem="MBf-dh-usB" secondAttribute="top" constant="8" id="jOu-nu-td2"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yuv-HL-0jo" secondAttribute="bottom" constant="8" id="vFm-n6-aTn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="top" secondItem="KsO-Jb-Aez" secondAttribute="top" id="GZr-Ya-5sj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MBf-dh-usB" secondAttribute="leading" id="PQz-jZ-Mf4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MBf-dh-usB" secondAttribute="trailing" id="Pgr-ws-cMh"/>
+                            <constraint firstAttribute="trailing" secondItem="KsO-Jb-Aez" secondAttribute="trailing" id="l32-2e-lR8"/>
+                            <constraint firstItem="MBf-dh-usB" firstAttribute="top" secondItem="8bj-L4-and" secondAttribute="topMargin" constant="25" id="mJi-d4-jHG"/>
+                            <constraint firstAttribute="leading" secondItem="KsO-Jb-Aez" secondAttribute="leading" id="rPU-nM-uMv"/>
+                            <constraint firstAttribute="bottom" secondItem="KsO-Jb-Aez" secondAttribute="bottom" id="sA4-je-ZXR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DHg-bT-f1R"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WiV-oV-JdM" appends="YES" id="tkh-Lk-Mau"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="e2Y-p8-mLD"/>
+                    <connections>
+                        <outlet property="baseView" destination="MBf-dh-usB" id="nLs-kd-p4o"/>
+                        <outlet property="datePicker" destination="fkm-k4-PTg" id="TVd-Jz-sVr"/>
+                        <outlet property="nameLabel" destination="IIS-Gf-rr0" id="mlS-oV-N1z"/>
+                        <outlet property="objectLabel" destination="gcX-SO-9iE" id="hjZ-tI-7Rl"/>
+                        <outlet property="saveButton" destination="vsH-8X-eO3" id="dOL-ct-PZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ski-KJ-Lgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WiV-oV-JdM">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="v25-8x-9ie" id="0KR-72-GSS"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="-158.77061469265368"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="BJU-qD-xQH">
+            <objects>
+                <viewController id="gKv-Ej-H5U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EJE-NR-LlT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2MB-Lb-e0d"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="ge6-3U-XRq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTh-tF-zIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="541"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RfD-Ya-ekP">
+            <objects>
+                <tabBarController id="3NY-ML-nVE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VME-Ma-wMq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="v25-8x-9ie" kind="relationship" relationship="viewControllers" id="K5O-Zi-SQ5"/>
+                        <segue destination="gKv-Ej-H5U" kind="relationship" relationship="viewControllers" id="gCF-yG-7fW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXb-ud-a6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727" y="71"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgRegister" width="744" height="1392"/>
+    </resources>
+</document>
