@@ -44,9 +44,17 @@ class RegisterViewController: UIViewController {
         var lendings = LendingService.shared.lendings
         lendings.append(lending)
         LendingService.shared.lendings = lendings
+        cleanValues()
+        view.endEditing(true)
     }
 
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
+    }
+
+    private func cleanValues() {
+        nameLabel.text = ""
+        objectLabel.text = ""
+        datePicker.setDate(Date(), animated: true)
     }
 }

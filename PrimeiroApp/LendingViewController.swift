@@ -43,8 +43,18 @@ extension LendingViewController: UITableViewDataSource {
         
         let lending = lendings[indexPath.row]
         cell.textLabel?.text = lending.name
-        cell.detailTextLabel?.text = "\(lending.object) - \(lending.date)"
+        cell.detailTextLabel?.text = "\(lending.object) - \(lending.date.simpleDateFormatting())"
         
         return cell
+    }
+}
+
+extension Date {
+
+    func simpleDateFormatting() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .none
+        return dateFormatter.string(from: self)
     }
 }

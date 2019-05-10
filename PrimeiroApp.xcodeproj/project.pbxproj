@@ -14,7 +14,7 @@
 		A068677222816DAB00D0301C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A068677122816DAB00D0301C /* Assets.xcassets */; };
 		A068677522816DAB00D0301C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A068677322816DAB00D0301C /* LaunchScreen.storyboard */; };
 		A0E59D902283FEBC000C2455 /* Lending.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E59D8F2283FEBC000C2455 /* Lending.swift */; };
-		A0E59D9222855581000C2455 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E59D9122855581000C2455 /* File.swift */; };
+		A0E59D9222855581000C2455 /* LendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E59D9122855581000C2455 /* LendingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		A068677422816DAB00D0301C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A068677622816DAB00D0301C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E59D8F2283FEBC000C2455 /* Lending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lending.swift; sourceTree = "<group>"; };
-		A0E59D9122855581000C2455 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		A0E59D9122855581000C2455 /* LendingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				A068677322816DAB00D0301C /* LaunchScreen.storyboard */,
 				A068677622816DAB00D0301C /* Info.plist */,
 				A0E59D8F2283FEBC000C2455 /* Lending.swift */,
-				A0E59D9122855581000C2455 /* File.swift */,
+				A0E59D9122855581000C2455 /* LendingService.swift */,
 				7115B31C2285F16F00385A8B /* LendingViewController.swift */,
 			);
 			path = PrimeiroApp;
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E59D902283FEBC000C2455 /* Lending.swift in Sources */,
-				A0E59D9222855581000C2455 /* File.swift in Sources */,
+				A0E59D9222855581000C2455 /* LendingService.swift in Sources */,
 				A068676D22816DA900D0301C /* RegisterViewController.swift in Sources */,
 				A068676B22816DA900D0301C /* AppDelegate.swift in Sources */,
 				7115B31D2285F16F00385A8B /* LendingViewController.swift in Sources */,
