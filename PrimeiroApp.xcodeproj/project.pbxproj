@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7115B31D2285F16F00385A8B /* LendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115B31C2285F16F00385A8B /* LendingViewController.swift */; };
+		7115B31D2285F16F00385A8B /* LendingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115B31C2285F16F00385A8B /* LendingsViewController.swift */; };
 		A068676B22816DA900D0301C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068676A22816DA900D0301C /* AppDelegate.swift */; };
 		A068676D22816DA900D0301C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068676C22816DA900D0301C /* RegisterViewController.swift */; };
 		A068677022816DA900D0301C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A068676E22816DA900D0301C /* Main.storyboard */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7115B31C2285F16F00385A8B /* LendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendingViewController.swift; sourceTree = "<group>"; };
+		7115B31C2285F16F00385A8B /* LendingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendingsViewController.swift; sourceTree = "<group>"; };
 		A068676722816DA900D0301C /* PrimeiroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeiroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A068676A22816DA900D0301C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A068676C22816DA900D0301C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -62,13 +62,13 @@
 			children = (
 				A068676A22816DA900D0301C /* AppDelegate.swift */,
 				A068676C22816DA900D0301C /* RegisterViewController.swift */,
+				7115B31C2285F16F00385A8B /* LendingsViewController.swift */,
 				A068676E22816DA900D0301C /* Main.storyboard */,
 				A068677122816DAB00D0301C /* Assets.xcassets */,
 				A068677322816DAB00D0301C /* LaunchScreen.storyboard */,
 				A068677622816DAB00D0301C /* Info.plist */,
 				A0E59D8F2283FEBC000C2455 /* Lending.swift */,
 				A0E59D9122855581000C2455 /* LendingService.swift */,
-				7115B31C2285F16F00385A8B /* LendingViewController.swift */,
 			);
 			path = PrimeiroApp;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 				A0E59D9222855581000C2455 /* LendingService.swift in Sources */,
 				A068676D22816DA900D0301C /* RegisterViewController.swift in Sources */,
 				A068676B22816DA900D0301C /* AppDelegate.swift in Sources */,
-				7115B31D2285F16F00385A8B /* LendingViewController.swift in Sources */,
+				7115B31D2285F16F00385A8B /* LendingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

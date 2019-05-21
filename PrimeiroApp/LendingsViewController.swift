@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LendingViewController: UIViewController {
+class LendingsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -28,12 +28,18 @@ class LendingViewController: UIViewController {
         lendings = LendingService.shared.lendings.sorted().reversed()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showLendingDetail" {
+            
+        }
+    }
+
     private func setupStyle() {
         tableView.tableFooterView = UIView()
     }
 }
 
-extension LendingViewController: UITableViewDataSource {
+extension LendingsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lendings.count
     }
@@ -47,10 +53,13 @@ extension LendingViewController: UITableViewDataSource {
         
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showLendingDetail", sender: nil)
+    }
 }
 
 extension Date {
-
     func simpleDateFormatting() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
