@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Lending: Codable, Comparable {
+struct Lending: Codable, Comparable, Hashable {
     var name: String
     var object: String
     var date: Date

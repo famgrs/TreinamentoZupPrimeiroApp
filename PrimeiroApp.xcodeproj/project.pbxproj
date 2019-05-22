@@ -15,6 +15,7 @@
 		A068677522816DAB00D0301C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A068677322816DAB00D0301C /* LaunchScreen.storyboard */; };
 		A0E59D902283FEBC000C2455 /* Lending.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E59D8F2283FEBC000C2455 /* Lending.swift */; };
 		A0E59D9222855581000C2455 /* LendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E59D9122855581000C2455 /* LendingService.swift */; };
+		D18D430D2294B3250071507E /* LendingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18D430C2294B3250071507E /* LendingDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A068677622816DAB00D0301C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E59D8F2283FEBC000C2455 /* Lending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lending.swift; sourceTree = "<group>"; };
 		A0E59D9122855581000C2455 /* LendingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendingService.swift; sourceTree = "<group>"; };
+		D18D430C2294B3250071507E /* LendingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendingDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A068676A22816DA900D0301C /* AppDelegate.swift */,
 				A068676C22816DA900D0301C /* RegisterViewController.swift */,
 				7115B31C2285F16F00385A8B /* LendingsViewController.swift */,
+				D18D430C2294B3250071507E /* LendingDetailsViewController.swift */,
 				A068676E22816DA900D0301C /* Main.storyboard */,
 				A068677122816DAB00D0301C /* Assets.xcassets */,
 				A068677322816DAB00D0301C /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				A068676D22816DA900D0301C /* RegisterViewController.swift in Sources */,
 				A068676B22816DA900D0301C /* AppDelegate.swift in Sources */,
 				7115B31D2285F16F00385A8B /* LendingsViewController.swift in Sources */,
+				D18D430D2294B3250071507E /* LendingDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

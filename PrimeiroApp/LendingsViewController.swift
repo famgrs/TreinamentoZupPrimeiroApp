@@ -29,9 +29,11 @@ class LendingsViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showLendingDetail" {
-            
-        }
+        guard let lending = sender as? Lending,
+              let viewController = segue.destination as? LendingDetailsViewController
+        else { return }
+
+        viewController.lending = lending
     }
 
     private func setupStyle() {
@@ -55,7 +57,8 @@ extension LendingsViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showLendingDetail", sender: nil)
+        let lending = lendings[indexPath.row]
+        performSegue(withIdentifier: "showLendingDetail", sender: lending)
     }
 }
 
