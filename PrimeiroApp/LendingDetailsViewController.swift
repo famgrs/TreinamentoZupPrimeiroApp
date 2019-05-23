@@ -42,7 +42,19 @@ class LendingDetailsViewController: UIViewController {
         else { return }
         let updatedLending = Lending(name: name, object: object, date: datePicker.date)
 
-//        LendingService.shared.lendings
+        var newLendings = LendingService.shared.lendings
+        newLendings = newLendings.map({ (currLending) -> Lending in
+//            if currLending.hashValue == lending.hashValue {
+            if currLending.name == lending?.name && currLending.object == lending?.object {
+                return updatedLending
+            } else {
+                return currLending
+            }
+        })
+        LendingService.shared.lendings = newLendings
+        
+        view.endEditing(true)
+        navigationController?.popViewController(animated: true)
     }
     /*
     // MARK: - Navigation
